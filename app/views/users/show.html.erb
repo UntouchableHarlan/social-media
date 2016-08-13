@@ -1,0 +1,8 @@
+<% if current_user %>
+  <h1><%= current_user.first_name %></h1>
+  <p>
+    <%= @microposts.all %>
+  </p>
+<% else %>
+ <%= not_found %>
+<% end %>

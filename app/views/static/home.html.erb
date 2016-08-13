@@ -1,2 +1,10 @@
-<h1>Static#home</h1>
-<p>Find me in app/views/static/home.html.erb</p>
+<% if current_user %>
+<div class="container">
+  <%= "Welcome #{current_user.first_name}"%>
+</div>
+<% else %>
+<div class="container">
+  <%= "Biggie for Life "%>
+  <%= link_to "Sign Up", signup_path %>
+</div>
+<% end %>

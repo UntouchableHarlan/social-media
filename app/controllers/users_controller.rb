@@ -16,6 +16,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    @micropost = current_user.microposts.all
   end
 
   def update

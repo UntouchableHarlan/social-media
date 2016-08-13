@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  has_many :microposts
   has_many :statuses
   has_secure_password
   validates :first_name, presence: true
