@@ -28,6 +28,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
 gem 'bootstrap_form'
 gem 'faker'
+gem 'capybara'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
