@@ -1,8 +1,10 @@
 <% if current_user %>
   <h1><%= current_user.first_name %></h1>
+    <% @microposts.each do |m| %>
   <p>
-    <%= @microposts.all %>
+    <%= m.content%>
   </p>
+  <% end %>
 <% else %>
  <%= not_found %>
 <% end %>

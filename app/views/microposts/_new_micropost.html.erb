@@ -1,4 +1,4 @@
-<%= bootstrap_form_for(@micropost) do |f| %>
+<%= form_for([current_user, @micropost]) do |f| %>
   <%= f.text_field :content %>
   <%= f.submit "Post" %>
 <% end %>
